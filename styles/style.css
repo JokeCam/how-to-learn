@@ -351,9 +351,12 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   z-index: 3;
 }
 
+/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-  margin-top: 80px;
   width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .table__heading_theme_dark {
