@@ -6,33 +6,8 @@ div {
 
 /* Шрифты для всей страницы */
 
-p {
+* {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h1 {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h2 {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h3 {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h4 {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-h5 {
-font-family: 'Helvetica Neue', 'Arial', sans-serif;
-}
-
-
-.line_break {
-  width: 100%;
 }
 
 .page {
@@ -56,13 +31,16 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   background-color: #f2f2f2;
 }
 
+.logo {
+  background-image: url("../images/logo_place_header.svg");
+}
+
 .logo_place_header {
   width: 183px;
   height: 32px;
   position: absolute;
-  margin-top: 30px;
-  margin-left: 64px;
-  background-image: url("../images/logo_place_header.svg");
+  top: 30px;
+  left: 64px;
 }
 
 .font-family {
@@ -81,16 +59,10 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
 
 .header__subtitle {
   width: 388px;
-}
-
-.header__subtitle_position {
-  margin-left: 64px;
-  margin-bottom: 30px;
+  left: 64px;
+  bottom: 30px;
   position: absolute;
   align-self: flex-end;
-}
-
-.header__subtitle_text {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -100,8 +72,8 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   text-decoration: none;
 }
 
-.header_link :hover {
-  
+.header_link:hover {
+
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -110,7 +82,7 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   width: 568px;
   position: absolute;
   right: 0;
-  margin-top: 64px;
+  top: 64px;
   background-color: #2f80ed;
 }
 
@@ -140,6 +112,11 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
 
 .two-columns__brief {
   width: 175px;
+  margin: 0;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -155,15 +132,7 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   font-size: 24px;
 }
 
-.two-columns__brief_text {
-  margin: 0;
-  color: #2f80ed;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.two-columns__paragraph_text {
+.two-columns__paragraph {
   margin: 0;
   line-height: 34px;
   font-size: 24px;
@@ -178,25 +147,18 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
 
 .section-title {
   width: 60%;
-}
-
-.section-title__text {
   text-align: center;
-  margin: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  margin: 0;
 }
 
 .section-subtitle {
   margin-top: 20px;
   width: 60%;
-}
-
-.section-subtitle__text {
   text-align: center;
   align-self: flex-end;
-  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -236,36 +198,30 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 867px 637px;
-  height: 890px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
+  min-height: 790px;
 }
 
 .feinman__title {
   width: 648px;
   text-align: center;
-  margin-top: 100px;
-}
-
-.feinman__title_text {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
   margin: 0;
+  margin-top: 100px;
 }
 
 .feinman__subtitle {
-  margin-top: 70px;
-}
-
-.feinman__subtitle_text {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
+  margin-top: 70px;
 }
 
 .feinman__link {
@@ -273,9 +229,6 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   top: 50%;
   transform: translateY(-50%);
   right: 48px;
-}
-
-.feinman__link_text {
   color: #2f80ed;
   line-height: 51px;
   font-size: 36px;
@@ -301,40 +254,35 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   background-size: contain;
   background-repeat: no-repeat;
   right: -270px;
+  top: 0;
   z-index: 2;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   width: 60%;
-  margin-top: 90px;
   z-index: 3;
-}
-
-.section-title__theme_dark_text {
   text-align: center;
   margin: 0;
+  margin-top: 90px;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   color: white;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   width: 60%;
-  margin-top: 20px;
   z-index: 3;
-}
-
-.section-subtitle__theme_dark_text {
   text-align: center;
   margin: 0;
+  margin-top: 20px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: white;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -391,7 +339,7 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url("../images/logo_place_footer.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -402,41 +350,13 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
 
 .footer__author {
   margin: 18px 0;
-}
-
-.footer__author_text {
-  margin: 0;
   color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.footer__column-heading_text {
-  margin: 0;
-  color: white;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.footer__column-links {
-  margin: 20px 0 16px;
-}
-
-.footer__column-links_text {
-  margin: 0;
-  color: white;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.footer__social-icon {
-  margin-bottom: 90px;
-}
-
-.footer__social-icon_heading-text{
+.footer__column-heading {
   margin: 0 0 20px;
   color: white;
   line-height: 30px;
@@ -444,28 +364,34 @@ font-family: 'Helvetica Neue', 'Arial', sans-serif;
   font-weight: bolder;
 }
 
-.footer__social-icon_text {
-  text-decoration: none;
+.footer__column-links {
+  margin: 0;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 .footer__social-icon_instagram {
-  background-image: url("../images/vk_color_white.svg");
-  background-repeat: no-repeat;
-  background-position-y: 3px;
-}
-
-.footer__social-icon_vk {
   background-image: url("../images/instagram_color_white.svg");
   background-repeat: no-repeat;
   background-position-y: 3px;
 }
 
+.footer__social-icon_vk {
+  background-image: url("../images/vk_color_white.svg");
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
 
-
+.footer__social-icon_facebook {
+  background-image: url("../images/facebook_color_white.svg");
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
 
 
 
