@@ -50,7 +50,6 @@ div {
 .header__title {
   width: 730px;
   margin-left: 64px;
-  position: absolute;
   align-self: center;
   line-height: 96px;
   font-size: 102px;
@@ -70,10 +69,12 @@ div {
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
-.header_link:hover {
-
+.header_link :hover {
+  text-decoration: underline;
+  color: red;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -126,10 +127,9 @@ div {
 }
 
 .two-columns__span-accent {
-  padding-top: 0;
-  padding-bottom: 0;
   line-height: 34px;
   font-size: 24px;
+  font-weight: bold;
 }
 
 .two-columns__paragraph {
@@ -137,6 +137,11 @@ div {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.two-columns__paragraph_middle {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .digits {
@@ -364,15 +369,18 @@ div {
   font-weight: bolder;
 }
 
-.footer__column-links {
+.footer__column-list {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.footer__column-link {
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  padding: 0;
   text-decoration: none;
-  list-style-type: none;
 }
 
 .footer__social-icon_instagram {
