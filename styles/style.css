@@ -133,15 +133,14 @@ div {
 }
 
 .two-columns__paragraph {
-  margin: 0;
+  margin: 0 0 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
 
-.two-columns__paragraph_middle {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.two-columns__paragraph:last-child {
+  margin: 0;
 }
 
 .digits {
