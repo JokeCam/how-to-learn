@@ -1,9 +1,9 @@
 .logo_place_footer {
-    background-image: url("/images/logo_place_footer.svg");
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: 183px 35px;
-    height: 35px;
-    width: 183px;
+  background-image: url("../../../images/logo_place_footer.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 183px 35px;
+  height: 35px;
+  width: 183px;
 
-  }
+}
